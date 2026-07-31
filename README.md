@@ -57,14 +57,14 @@ python coherence_probe.py --model meta-llama/Llama-3.1-8B
 
 ```
   operator     dose   coherent_fraction   error_rate   gate
-  svd         b=0.98               0.009        0.012    FLAG
-  svd         b=0.97               0.008        0.020    FLAG
-  prune       d=0.75               0.006        0.007    pass
-  prune       d=0.55               0.006        0.045    pass
-  quant       4bit                 0.010        0.009    pass
+  svd         b=0.99               0.0145       0.0594   FLAG
+  svd         b=0.97               0.0139       0.0653   FLAG
+  prune       d=0.75               0.0057       0.0073   pass
+  prune       d=0.55               0.0069       0.0449   pass
+  quant       4bit                 0.0081       0.0086   pass
 ```
 
-(Values above are from the paper's calibrated 7–8B run. Absolute numbers shift with the model family, so read the *pattern*, not the digits.) Low-rank SVD sits above the coherence gate (0.007) at every dose. Pruning stays below it even when it removes far more weight energy. That gap is the whole story: coherent error breaks agentic procedure-following; incoherent error of the same size does not. Recalibrate the two thresholds per family before using the gate as a hard block.
+Real output on Llama-3.1-8B (224 tensors). Low-rank SVD sits above the coherence gate (0.007) at every dose; pruning stays below it even when it removes far more weight energy. That gap is the whole story: coherent error breaks agentic procedure-following, and incoherent error of the same size does not. Absolute numbers shift with the model family (and this probe applies uniform per-tensor truncation, so its SVD error runs higher than the paper's probe-allocated builds), so read the pattern and recalibrate the two thresholds per family before using the gate as a hard block.
 
 ## 3. Screen a quantized build before you ship it
 
