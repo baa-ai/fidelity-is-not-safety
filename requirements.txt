@@ -1,0 +1,4 @@
+mlx>=0.18
+mlx-lm>=0.19
+numpy>=1.24
+datasets>=2.14

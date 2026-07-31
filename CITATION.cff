@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "Fidelity Is Not Safety"
+message: "If you use this software or the finding, please cite the paper."
+authors:
+  - family-names: Kennedy
+    given-names: I.
+  - family-names: Kennedy
+    given-names: T.
+preferred-citation:
+  type: article
+  title: "Fidelity Is Not Safety: Gently-Compressed LLMs Pass Every Data-Free Quality Guard Yet Invent Procedure Steps in Agentic Execution"
+  authors:
+    - family-names: Kennedy
+      given-names: I.
+    - family-names: Kennedy
+      given-names: T.
+  year: 2026
+  journal: "arXiv preprint arXiv:2607.28196"
+  url: "https://arxiv.org/abs/2607.28196"
