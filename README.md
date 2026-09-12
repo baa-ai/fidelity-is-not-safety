@@ -103,7 +103,7 @@ Thresholds are calibrated on 7–8B dense models and are advisory. Recalibrate p
 @article{kennedy2026fidelity,
   title  = {Fidelity Is Not Safety: Gently-Compressed LLMs Pass Every Data-Free
             Quality Guard Yet Invent Procedure Steps in Agentic Execution},
-  author = {Kennedy, I. and Kennedy, T.},
+  author = {Black Sheep Ai, Kennedy, I. and Kennedy, T.},
   journal = {arXiv preprint arXiv:2607.28196},
   year   = {2026}
 }
@@ -111,4 +111,4 @@ Thresholds are calibrated on 7–8B dense models and are advisory. Recalibrate p
 
 ## License
 
-MIT. See [LICENSE](LICENSE). Built by [baa.ai](https://baa.ai).
+MIT. See [LICENSE](LICENSE). Built by Black Sheep Ai. [baa.ai](https://baa.ai).
